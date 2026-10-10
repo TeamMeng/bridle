@@ -1,9 +1,15 @@
-[package]
-name = "bridle"
-version = "0.1.0"
-edition = "2024"
-license = "MIT"
+[workspace]
+resolver = "2"
+members = ["bridle-agent",
+    "bridle-app",
+    "bridle-core", "bridle-llm", "bridle-tools",
+]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
+[workspace.dependencies]
+anyhow = "1.0.104"
+async-trait = "0.1.92"
+dotenvy = "0.15.7"
+reqwest = { version = "0.13.5", features = ["json"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tokio = { version = "1.53.2", features = ["rt-multi-thread", "macros"] }
