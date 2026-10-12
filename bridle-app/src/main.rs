@@ -1,11 +1,14 @@
-fn main() {
-    println!("Hello, world!");
-}
+use bridle_core::AppConfig;
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn func() {
-        assert_eq!(1, 1);
-    }
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    dotenvy::dotenv().ok();
+    println!("项目启动中!");
+
+    let config = AppConfig::from_env()?;
+
+    println!("mode name: {}", config.model_name);
+    println!("api base: {}", config.api_base);
+
+    Ok(())
 }

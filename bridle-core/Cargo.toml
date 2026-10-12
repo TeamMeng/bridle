@@ -5,3 +5,5 @@ license = "MIT"
 edition = "2024"
 
 [dependencies]
+anyhow = { workspace = true }
+temp-env = "0.3.6"

@@ -8,6 +8,7 @@ members = ["bridle-agent",
 [workspace.dependencies]
 anyhow = "1.0.104"
 async-trait = "0.1.92"
+bridle-core = { version = "0.1.0", path = "./bridle-core" }
 dotenvy = "0.15.7"
 reqwest = { version = "0.13.5", features = ["json"] }
 serde = { version = "1.0.229", features = ["derive"] }
