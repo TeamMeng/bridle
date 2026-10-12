@@ -1,4 +1,4 @@
-use bridle_core::AppConfig;
+use bridle_core::config::AppConfig;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
