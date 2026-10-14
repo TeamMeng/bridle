@@ -7,10 +7,11 @@ edition = "2024"
 [dependencies]
 anyhow = { workspace = true }
 async-trait = { workspace = true }
+chrono = { version = "0.4.45", features = ["clock"] }
 reqwest = { workspace = true }
 schemars = { workspace = true }
 serde = { workspace = true }
-serde_json.workspace = true
+serde_json = { workspace = true }
 temp-env = "0.3.6"
 thiserror = { workspace = true }
 tokio = { workspace = true }

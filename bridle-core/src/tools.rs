@@ -1,4 +1,5 @@
 pub mod base;
+pub mod builtin;
 pub mod function;
 pub mod registry;
 pub mod result;
