@@ -5,3 +5,8 @@ license = "MIT"
 edition = "2024"
 
 [dependencies]
+async-trait = { workspace = true }
+bridle-core = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
