@@ -1,8 +1,11 @@
 [workspace]
 resolver = "2"
-members = ["bridle-agent",
-    "bridle-app",
-    "bridle-core", "bridle-llm", "bridle-tools",
+members = [
+  "bridle-agent",
+  "bridle-app",
+  "bridle-core",
+  "bridle-llm",
+  "bridle-tools",
 ]
 
 [workspace.dependencies]
@@ -11,6 +14,7 @@ async-trait = "0.1.92"
 bridle-core = { version = "0.1.0", path = "./bridle-core" }
 dotenvy = "0.15.7"
 reqwest = { version = "0.13.5", features = ["json"] }
+schemars = "1.2.3"
 serde = { version = "1.0.229", features = ["derive"] }
 serde_json = "1.0.151"
 thiserror = "2.0.21"

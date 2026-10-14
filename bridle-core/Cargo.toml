@@ -6,9 +6,11 @@ edition = "2024"
 
 [dependencies]
 anyhow = { workspace = true }
+async-trait = { workspace = true }
 reqwest = { workspace = true }
-serde = { workspace = true}
+schemars = { workspace = true }
+serde = { workspace = true }
 serde_json.workspace = true
 temp-env = "0.3.6"
-thiserror = { workspace = true}
+thiserror = { workspace = true }
 tokio = { workspace = true }
